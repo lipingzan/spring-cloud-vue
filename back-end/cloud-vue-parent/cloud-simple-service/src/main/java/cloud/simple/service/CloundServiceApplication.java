@@ -10,6 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Controller
 @Configuration
@@ -20,9 +22,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 //@EnableWebMvc
 @MapperScan(basePackages={"cloud.simple.service.dao","com.framework.common.base"})
 public class CloundServiceApplication extends WebMvcConfigurerAdapter  {
+	private static final Logger log = LoggerFactory.getLogger(CloundServiceApplication.class);
 	
     public static void main(String[] args) {
+    	log.info("CloundServiceApplication run main");
     	SpringApplication.run(CloundServiceApplication.class, args);
+    	log.info("CloundServiceApplication run main end");
     }
 
 }	

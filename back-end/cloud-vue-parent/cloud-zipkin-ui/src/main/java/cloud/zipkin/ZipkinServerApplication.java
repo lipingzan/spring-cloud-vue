@@ -17,15 +17,22 @@ import org.springframework.web.client.RestTemplate;
 
 import zipkin.server.EnableZipkinServer;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 @SpringBootApplication
 @EnableEurekaClient
 @EnableCircuitBreaker
 @EnableZipkinServer
 public class ZipkinServerApplication {
+	
+	private static final Logger log = LoggerFactory.getLogger(ZipkinServerApplication.class);
 
 	public static void main(String[] args) throws Exception {
+		log.info("ZipkinServerApplication run main");
 		new SpringApplicationBuilder(ZipkinServerApplication.class).web(true).run(args);
+		log.info("ZipkinServerApplication run main end");
 	}
 	
 	@LoadBalanced
