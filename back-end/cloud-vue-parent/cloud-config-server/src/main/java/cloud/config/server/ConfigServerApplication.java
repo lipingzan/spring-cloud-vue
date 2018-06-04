@@ -21,9 +21,9 @@ public class ConfigServerApplication {
 	private static final Logger log = LoggerFactory.getLogger(ConfigServerApplication.class);
 	
     public static void main(String[] args) {
-    	log.info("ConfigServerApplication run main");
+    	log.info("ConfigServerApplication run main开始");
         SpringApplication.run(ConfigServerApplication.class, args);
-        log.info("ConfigServerApplication run main end");
+        log.info("ConfigServerApplication run main 结束");
     }
     
 }

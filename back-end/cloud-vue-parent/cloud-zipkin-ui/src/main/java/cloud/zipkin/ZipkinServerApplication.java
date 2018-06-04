@@ -30,9 +30,9 @@ public class ZipkinServerApplication {
 	private static final Logger log = LoggerFactory.getLogger(ZipkinServerApplication.class);
 
 	public static void main(String[] args) throws Exception {
-		log.info("ZipkinServerApplication run main");
+		log.info("ZipkinServerApplication run main 开始");
 		new SpringApplicationBuilder(ZipkinServerApplication.class).web(true).run(args);
-		log.info("ZipkinServerApplication run main end");
+		log.info("ZipkinServerApplication run main 结束");
 	}
 	
 	@LoadBalanced

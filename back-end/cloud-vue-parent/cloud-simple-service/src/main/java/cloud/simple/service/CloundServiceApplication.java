@@ -25,9 +25,9 @@ public class CloundServiceApplication extends WebMvcConfigurerAdapter  {
 	private static final Logger log = LoggerFactory.getLogger(CloundServiceApplication.class);
 	
     public static void main(String[] args) {
-    	log.info("CloundServiceApplication run main");
+    	log.info("CloundServiceApplication run main 开始");
     	SpringApplication.run(CloundServiceApplication.class, args);
-    	log.info("CloundServiceApplication run main end");
+    	log.info("CloundServiceApplication run main 结束");
     }
 
 }	

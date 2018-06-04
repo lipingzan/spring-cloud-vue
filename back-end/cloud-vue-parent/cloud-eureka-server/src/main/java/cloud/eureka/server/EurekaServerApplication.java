@@ -13,9 +13,9 @@ public class EurekaServerApplication {
 	private static final Logger log = LoggerFactory.getLogger(EurekaServerApplication.class);
 	
 	public static void main(String[] args) {
-		log.info("EurekaServerApplication run main");
+		log.info("EurekaServerApplication run main 开始");
         new SpringApplicationBuilder(EurekaServerApplication.class).web(true).run(args);
-        log.info("EurekaServerApplication run main end");
+        log.info("EurekaServerApplication run main 结束");
         
     }
 }

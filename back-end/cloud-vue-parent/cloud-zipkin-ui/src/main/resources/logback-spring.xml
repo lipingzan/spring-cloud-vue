@@ -113,7 +113,7 @@
 	</appender>
 		
 	<!-- customized logger level -->
-    <logger name="com.glodon.xz.pdf" level="INFO">  
+    <logger name="cloud" level="DEBUG">
 	</logger>
 	<logger name="org.springframework.http" level="INFO">   
 	</logger>
